@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sham | About</title>
+    <link rel="website icon" type="jpg" href="logo.jpg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+  />
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="text-3xl font-bold text-blue-600"><a href="index.html">Sham.</a></div>
+            <nav class="hidden md:flex space-x-6 text-md font-bold">
+                <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+                <a href="about.html" class="border-b-2 border-blue-200 hover:text-blue-600 transition">About</a>
+                <a href="projects.html" class="hover:text-blue-600 transition">Projects</a>
+                <a href="contact.html" class="hover:text-blue-600 transition">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menuButton" class="text-3xl text-blue-600 focus:outline-none">&#9776;</button>
+            </div>
+        </div>
+    </header>
+     <!-- Mobile Menu (for small screens) -->
+     <div id="mobileMenu" class="hidden bg-white shadow-md md:hidden">
+        <nav class="flex flex-col text-lg">
+            <a href="index.html" class="py-4 px-6 hover:bg-blue-100">Home</a>
+            <a href="about.html" class="py-4 px-6 hover:bg-blue-100">About</a>
+            <a href="projects.html" class="py-4 px-6 hover:bg-blue-100">Projects</a>
+            <a href="contact.html" class="py-4 px-6 hover:bg-blue-100">Contact</a>
+        </nav>
+    </div>
+
+    <!-- About Me Section -->
+    <section class="container mx-auto py-20 px-6" data-aos="fade-up"
+    data-aos-delay="200">
+        <h1 class="text-4xl font-bold text-center mb-6">About Me</h1>
+        <div class="max-w-2xl mx-auto text-lg text-gray-700">
+            <img src="sham.jpg" alt="Your Profile" class="w-32 h-32 object-cover md:w-48 md:h-48 rounded-full mx-auto mb-6 shadow-lg">
+            <p>Hello! I’m Sham, a web developer and designer based in India. I specialize in creating dynamic, beautiful web applications. With experience in full-stack development, I work with a variety of technologies to bring ideas to life.</p>
+            <p class="mt-4">I enjoy problem-solving, learning new skills, and constantly evolving as a developer. I’m always open to discussing new projects and opportunities.</p>
+            <h2 class="text-lg text-blue-700 mt-10"><a href="contact.html">GET your websites starting from 2.99$!</a></h2>   </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6">
+        <p>&copy; 2024 MyPortfolio. All rights reserved.</p>
+    </footer>
+    <script>
+        // Mobile Menu Toggle
+        const menuButton = document.getElementById("menuButton");
+        const mobileMenu = document.getElementById("mobileMenu");
+        
+        menuButton.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+        window.addEventListener('load', function() {
+    AOS.init({
+        duration: 1000, 
+        once: true
+    });
+}); 
+    </script>
+
+
+</body>
+</html>
